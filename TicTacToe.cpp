@@ -40,4 +40,12 @@ playerChoice GetPlayerChoice()
 
 main(){
   std::vector<std::vector<int>> board = CreateBoard();
+   
+   for(int i = 0; i < 5; i++){
+      playerChoice p1 = GetPlayerChoice();
+      PlaceMarker(p1, 1, board);
+      
+      playerChoice p2 = GetPlayerChoice();
+      PlaceMarker(p2, 2, board);
+   }
 }
