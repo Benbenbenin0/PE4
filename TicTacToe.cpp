@@ -18,6 +18,8 @@ void DisplayBoard(auto board){
 }
 
 
+void PlaceMarker(playerChoice choice, int marker, std::vector<std::vector<int>> vec){
+   vec.at(choice.x).at(choice.y) = marker;
 struct playerChoice
 {
    int x;
@@ -32,6 +34,7 @@ playerChoice GetPlayerChoice()
    std::cout << "Enter your row between 1 and 3" << std::endl;
    std::cin >> pc.y;
    return pc;
+
 }
 
 main(){
