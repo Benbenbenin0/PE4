@@ -30,10 +30,14 @@ struct playerChoice
 playerChoice GetPlayerChoice() 
 {
    playerChoice pc;
-   std::cout << "Enter your column between 1 and 3" << std::endl;
-   std::cin >> pc.x;
-   std::cout << "Enter your row between 1 and 3" << std::endl;
-   std::cin >> pc.y;
+   std::string strX;
+   std::string strY;
+   std::cout << "Enter your column between 0 and 2" << std::endl;
+   std::cin >> strX;
+   pc.x = stoi(strX);
+   std::cout << "Enter your row between 0 and 0" << std::endl;
+   std::cin >> strY;
+   pc.y = stoi(strY);
    return pc;
 
 }
