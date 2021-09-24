@@ -27,6 +27,10 @@ void DisplayBoard(std::vector<std::vector<int>> vec){
    }
 }
 
+void PlaceMarker(playerChoice choice, int marker, std::vector<std::vector<int>> vec){
+   vec.at(choice.x).at(choice.y) = marker;
+}
+
 main(){
   std::vector<std::vector<int>> board = CreateBoard();
 }
