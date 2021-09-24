@@ -35,7 +35,7 @@ playerChoice GetPlayerChoice()
    std::cout << "Enter your column between 0 and 2" << std::endl;
    std::cin >> strX;
    pc.x = stoi(strX);
-   std::cout << "Enter your row between 0 and 0" << std::endl;
+   std::cout << "Enter your row between 0 and 2" << std::endl;
    std::cin >> strY;
    pc.y = stoi(strY);
    return pc;
