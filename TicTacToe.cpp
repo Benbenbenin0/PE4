@@ -26,11 +26,12 @@ struct playerChoice
 
 playerChoice GetPlayerChoice() 
 {
-    playerChoice pc;
-    std::cout << "Enter your column between 1 and 3" << std::endl;
-    std::cin >> pc.x;
-    std::cout << "Enter your row between 1 and 3" << std::endl;
-    std::cin >> pc.y;
+   playerChoice pc;
+   std::cout << "Enter your column between 1 and 3" << std::endl;
+   std::cin >> pc.x;
+   std::cout << "Enter your row between 1 and 3" << std::endl;
+   std::cin >> pc.y;
+   return pc;
 }
 
 main(){
