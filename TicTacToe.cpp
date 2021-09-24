@@ -16,17 +16,6 @@ void DisplayBoard(auto board){
     }
 }
 
-void DisplayBoard(std::vector<std::vector<int>> vec){
-   for (int i = 0; i < vec.size(); i++)
-   {
-    for (int j = 0; j < vec[i].size(); j++)
-    {
-        cout << vec[i][j];
-    }
-      cout << endl;
-   }
-}
-
 void PlaceMarker(playerChoice choice, int marker, std::vector<std::vector<int>> vec){
    vec.at(choice.x).at(choice.y) = marker;
 }
